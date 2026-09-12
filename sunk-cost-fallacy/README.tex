@@ -1,0 +1,129 @@
+% Compiler: pdfLaTeX
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Document details
+\newcommand{\researchtitle}{Sunk cost fallacy}
+\newcommand{\researchshorttitle}{Sunk cost fallacy}
+\newcommand{\researchdate}{2026-10-25}
+
+% Layout
+\geometry{left=2.7cm,right=2.7cm,top=2.5cm,bottom=2.5cm,headheight=14pt}
+\hypersetup{hidelinks,pdftitle={\researchtitle}}
+\urlstyle{same}
+\frenchspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\linespread{1.04}
+\setlength{\emergencystretch}{1em}
+
+\titleformat{\section}
+    {\large\bfseries}{\thesection}{0.65em}{}
+\titleformat{\subsection}
+    {\normalsize\bfseries}{\thesubsection}{0.65em}{}
+\titlespacing*{\section}{0pt}{1.15em}{0.35em}
+\titlespacing*{\subsection}{0pt}{0.7em}{0.2em}
+\setlist[itemize]{leftmargin=1.35em,itemsep=0.25em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=0.25em,topsep=0.2em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Random Research}
+\fancyhead[R]{\small\researchshorttitle}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+{\LARGE\bfseries\researchtitle\par}
+\vspace{0.4em}
+{\small\researchdate\par}
+
+\section{Overview}
+
+A sunk cost is something already spent that cannot be recovered. The sunk
+cost fallacy occurs when that past investment makes an inferior option
+harder to leave. Money is the obvious example, but time and effort can have
+the same pull. \cite{arkes}
+
+The awkward part is that continuing can feel responsible. Walking away
+makes the loss visible, even when staying would add another loss.
+
+\section{Findings}
+
+Arkes and Blumer found that people became more willing to continue an
+activity after investing in it. In their theatre study, customers who paid
+more for season tickets attended more performances during the following
+six months. Their experiments also supported the idea that people dislike
+appearing wasteful. \cite{arkes}
+
+The investment does not have to be our own. Olivola's experiments found
+that people changed their choices in response to costs paid by someone
+else. This complicates the familiar advice to ignore what you personally
+spent: a gift or somebody else's effort can create a similar sense of
+obligation. \cite{olivola}
+
+These findings describe a tendency. A previous investment alone does not
+tell us whether continuing a particular project is sensible.
+
+\section{Example}
+
+Suppose someone pays for a course, finishes several lessons, and realizes
+that it does not teach what they need. They keep going because the fee
+was expensive. If the payment is non-refundable, finishing cannot recover
+it. The remaining lessons still cost time.
+
+There may be good reasons to continue, such as a useful qualification or
+material that appears later. Those are benefits still available. This
+hypothetical example depends on what the course can offer from today.
+
+\section{Discussion}
+
+I find the reluctance to admit waste more interesting than the money.
+Stopping can feel like a judgment on the person who started. That makes
+a practical decision unnecessarily personal.
+
+Still, I would be careful with advice to quit whenever something becomes
+unpleasant. Learning often includes dull periods. My question would be
+whether I can explain the expected benefit of continuing without relying
+on how much I have already sacrificed.
+
+\section{Practical implications}
+
+For a small decision, I would compare the remaining cost with what I
+expect to gain. A useful prompt is: if I had this option available today,
+with the next steps unchanged, would I choose it?
+
+Refunds, obligations, and the cost of switching also belong in that
+comparison. Calling a cost sunk only makes sense once it really is
+unrecoverable.
+
+\renewcommand{\refname}{References}
+\begin{thebibliography}{9}
+\small
+\setlength{\itemsep}{0.35em}
+
+\bibitem{arkes}
+Arkes, H. R., and Blumer, C. (1985).
+\href{https://www.sciencedirect.com/science/article/pii/0749597885900494}
+{The psychology of sunk cost.}
+\textit{Organizational Behavior and Human Decision Processes}, 35(1), 124--140.
+
+\bibitem{olivola}
+Olivola, C. Y. (2018).
+\href{https://doi.org/10.1177/0956797617752641}
+{The interpersonal sunk-cost effect.}
+\textit{Psychological Science}, 29(7), 1072--1083.
+
+\end{thebibliography}
+\end{document}
