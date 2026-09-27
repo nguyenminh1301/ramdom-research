@@ -1,0 +1,131 @@
+% Compiler: pdfLaTeX
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Document details
+\newcommand{\researchtitle}{The illusion of explanatory depth}
+\newcommand{\researchshorttitle}{Explanatory depth}
+\newcommand{\researchdate}{2026-10-25}
+
+% Layout
+\geometry{left=2.7cm,right=2.7cm,top=2.5cm,bottom=2.5cm,headheight=14pt}
+\hypersetup{hidelinks,pdftitle={\researchtitle}}
+\urlstyle{same}
+\frenchspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\linespread{1.04}
+\setlength{\emergencystretch}{1em}
+
+\titleformat{\section}
+    {\large\bfseries}{\thesection}{0.65em}{}
+\titleformat{\subsection}
+    {\normalsize\bfseries}{\thesubsection}{0.65em}{}
+\titlespacing*{\section}{0pt}{1.15em}{0.35em}
+\titlespacing*{\subsection}{0pt}{0.7em}{0.2em}
+\setlist[itemize]{leftmargin=1.35em,itemsep=0.25em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=0.25em,topsep=0.2em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Random Research}
+\fancyhead[R]{\small\researchshorttitle}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+{\LARGE\bfseries\researchtitle\par}
+\vspace{0.4em}
+{\small\researchdate\par}
+
+\section{Overview}
+
+Knowing what something does can feel like knowing how it works. The illusion
+of explanatory depth is the gap between how well we think we understand
+a mechanism and how much we can actually explain. \cite{rozenblit}
+
+A familiar object is a useful test. A zipper is easy to recognize and use.
+Explaining how its parts join and separate is a different task.
+
+\section{Findings}
+
+Rozenblit and Keil asked people to assess their understanding of devices,
+attempt explanations, and assess themselves again. Attempting an explanation
+exposed gaps that the initial rating had missed. They also found that this
+illusion was stronger for explanations than for several other kinds of
+knowledge. \cite{rozenblit}
+
+Keil's later review adds a point I would otherwise miss: people often work
+with partial explanations and draw on other people or the situation around
+them to fill the gaps. Everyday competence can depend on knowledge outside
+our own memory. \cite{keil}
+
+These results concern judgments about understanding. They do not tell us
+that a person must explain every mechanism before using it.
+
+\section{Example}
+
+Imagine reading an introduction to a bicycle's gears. The explanation feels
+clear, so you close the page. Later, somebody asks why changing gears affects
+the effort required to pedal. You can name the chain and gears but cannot
+connect their motion to the change in effort.
+
+This hypothetical example separates recognition from explanation. Reopening
+the page may make the account feel familiar again without revealing which
+steps you could reproduce on your own.
+
+\section{Discussion}
+
+I find this idea uncomfortable in a useful way. A fluent explanation can
+make a subject feel settled before I have worked through it. I would trust
+that feeling less after reading about this effect.
+
+But I do not think shallow knowledge is always a failure. For many everyday
+purposes, knowing what a tool does and when to ask for help is enough.
+The problem starts when a broad introduction becomes confidence about
+details it never covered.
+
+For these research notes, I would rather identify one part I still cannot
+explain than keep adding terminology to make the account sound complete.
+
+\section{Practical implications}
+
+After reading, I would close the source and explain one mechanism in plain
+language. At the first missing step, I would write down the question and
+look it up.
+
+That is a check on the scope of my understanding. A smooth explanation can
+still be wrong, so the result needs comparison with a reliable source.
+I would also decide how much detail the task requires before turning a
+short introduction into an endless reading list.
+
+\renewcommand{\refname}{References}
+\begin{thebibliography}{9}
+\small
+\setlength{\itemsep}{0.35em}
+
+\bibitem{rozenblit}
+Rozenblit, L., and Keil, F. (2002).
+\href{https://cogdevlab.yale.edu/sites/default/files/files/rozenblit%20%26%20keil%20%202002.pdf}
+{The misunderstood limits of folk science: An illusion of explanatory depth.}
+\textit{Cognitive Science}, 26(5), 521--562.
+
+\bibitem{keil}
+Keil, F. C. (2006).
+\href{https://doi.org/10.1146/annurev.psych.57.102904.190100}
+{Explanation and understanding.}
+\textit{Annual Review of Psychology}, 57, 227--254.
+
+\end{thebibliography}
+\end{document}
