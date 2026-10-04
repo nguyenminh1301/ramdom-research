@@ -1,0 +1,135 @@
+% Compiler: pdfLaTeX
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Document details
+\newcommand{\researchtitle}{Goodhart's law}
+\newcommand{\researchshorttitle}{Goodhart's law}
+\newcommand{\researchdate}{2026-10-25}
+
+% Layout
+\geometry{left=2.7cm,right=2.7cm,top=2.5cm,bottom=2.5cm,headheight=14pt}
+\hypersetup{hidelinks,pdftitle={\researchtitle}}
+\urlstyle{same}
+\frenchspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\linespread{1.04}
+\setlength{\emergencystretch}{1em}
+
+\titleformat{\section}
+    {\large\bfseries}{\thesection}{0.65em}{}
+\titleformat{\subsection}
+    {\normalsize\bfseries}{\thesubsection}{0.65em}{}
+\titlespacing*{\section}{0pt}{1.15em}{0.35em}
+\titlespacing*{\subsection}{0pt}{0.7em}{0.2em}
+\setlist[itemize]{leftmargin=1.35em,itemsep=0.25em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=0.25em,topsep=0.2em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Random Research}
+\fancyhead[R]{\small\researchshorttitle}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+{\LARGE\bfseries\researchtitle\par}
+\vspace{0.4em}
+{\small\researchdate\par}
+
+\section{Overview}
+
+Goodhart's law concerns what happens when we push a measure hard enough
+that it stops tracking the thing we care about. A count can help us
+understand an activity, then become a target that changes the activity
+itself. \cite{manheim}
+
+For a beginner, the useful question is simple: could this number improve
+while the actual outcome gets worse?
+
+\section{Findings}
+
+Strathern examines assessment in British universities. Her account treats
+audit as something that changes institutional life, with consequences
+beyond recording what was already happening. That helps explain why
+measurement deserves attention as part of a system of incentives.
+\cite{strathern}
+
+Manheim and Garrabrant distinguish several mechanisms behind failures of
+measurement. A measure can contain noise, or a relationship can stop
+holding when pushed beyond the conditions in which it was useful.
+Their account also separates those problems from deliberate manipulation.
+Cheating is therefore only one possible explanation. \cite{manheim}
+
+The paper is a conceptual analysis. It offers ways to examine a failure;
+it does not provide a universal threshold at which any particular metric
+will stop working.
+
+\section{Example}
+
+Suppose a support team is rewarded for closing tickets quickly. An
+employee could raise the closure count by ending conversations before
+the problem is resolved. Another could spend time on a difficult case
+and close fewer tickets despite helping the customer.
+
+This hypothetical example does not show that speed is a bad measure.
+It shows why a closure count cannot settle the question of whether the
+customer received useful help. Checking repeat contacts or reading a
+sample of conversations could reveal something the count leaves out.
+
+\section{Discussion}
+
+I like this idea because it makes a familiar frustration easier to
+describe. People can follow the target they were given and still produce
+work that disappoints whoever set it.
+
+My hesitation is that Goodhart's law can become a convenient excuse to
+reject measurement altogether. Without any record, judging performance
+can become arbitrary too. I would keep a useful measure and be willing
+to question what it leaves out.
+
+I would also avoid assuming bad faith. An employee may be adapting
+sensibly to the incentives of a job, while the organization has defined
+success too narrowly.
+
+\section{Practical implications}
+
+Before using a target, I would write down the outcome it is meant to
+represent. Then I would try to construct a case in which the target
+improves without that outcome improving.
+
+That case suggests what else to inspect. A second measure might help,
+although it can develop the same problem. Occasional review of the
+underlying work still seems necessary.
+
+\renewcommand{\refname}{References}
+\begin{thebibliography}{9}
+\small
+\setlength{\itemsep}{0.35em}
+
+\bibitem{strathern}
+Strathern, M. (1997).
+\href{https://www.cambridge.org/core/journals/european-review/article/improving-ratings-audit-in-the-british-university-system/FC2EE640C0C44E3DB87C29FB666E9AAB}
+{Improving ratings: Audit in the British University system.}
+\textit{European Review}, 5(3), 305--321.
+
+\bibitem{manheim}
+Manheim, D., and Garrabrant, S. (2019).
+\href{https://arxiv.org/abs/1803.04585}
+{Categorizing variants of Goodhart's law.}
+arXiv:1803.04585, version 4. First submitted in 2018.
+
+\end{thebibliography}
+\end{document}
