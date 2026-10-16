@@ -1,0 +1,141 @@
+% Compiler: pdfLaTeX
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Document details
+\newcommand{\researchtitle}{The tragedy of the commons}
+\newcommand{\researchshorttitle}{The commons}
+\newcommand{\researchdate}{2026-10-25}
+
+% Layout
+\geometry{left=2.7cm,right=2.7cm,top=2.5cm,bottom=2.5cm,headheight=14pt}
+\hypersetup{hidelinks,pdftitle={\researchtitle}}
+\urlstyle{same}
+\frenchspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\linespread{1.04}
+\setlength{\emergencystretch}{1em}
+
+\titleformat{\section}
+    {\large\bfseries}{\thesection}{0.65em}{}
+\titleformat{\subsection}
+    {\normalsize\bfseries}{\thesubsection}{0.65em}{}
+\titlespacing*{\section}{0pt}{1.15em}{0.35em}
+\titlespacing*{\subsection}{0pt}{0.7em}{0.2em}
+\setlist[itemize]{leftmargin=1.35em,itemsep=0.25em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=0.25em,topsep=0.2em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Random Research}
+\fancyhead[R]{\small\researchshorttitle}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+{\LARGE\bfseries\researchtitle\par}
+\vspace{0.4em}
+{\small\researchdate\par}
+
+\section{Overview}
+
+A shared resource can be overused when each person receives the benefit
+of taking more while spreading part of the damage across everyone else.
+Hardin illustrated this problem with a pasture open to all: each herder
+has an incentive to add animals, although the land has limits.
+\cite{hardin}
+
+The model is easy to follow. Whether it explains a particular community
+depends on the rules and circumstances of that community.
+
+\section{Findings}
+
+Hardin's pasture is a thought experiment about incentives. The extra
+animal benefits its owner, while the effects of overgrazing are shared.
+Repeating that decision across users can damage the resource on which
+they all depend. \cite{hardin}
+
+Ostrom challenges the assumption that resource users cannot cooperate
+without central direction. Her review draws on experiments and field
+research to examine how people use norms and rules to manage shared
+resources. It also treats policy changes as attempts that can fail,
+requiring attention to their effects. \cite{ostrom}
+
+In her NYU lecture, Ostrom discussed irrigation systems in Nepal.
+The university's account reports that locally managed systems could
+perform as well as or better than systems installed by development
+agencies. This challenges a simple ranking of management arrangements;
+it does not establish that local management always succeeds. \cite{nyu}
+
+\section{Example}
+
+Imagine several households drawing water from one well. Each household
+benefits from taking enough for its own needs. If everyone increases
+withdrawals during a dry period, less water remains for the group.
+
+Now suppose the households agree on limits and a way to check use.
+The shared resource is the same, but the decisions take place under
+different rules. This hypothetical example explains why access and
+management need to be considered separately.
+
+\section{Discussion}
+
+The word tragedy makes the outcome sound settled before anybody acts.
+That is what I find limiting about the phrase. Hardin's example helps
+explain the pressure to overuse a resource, but it leaves me wanting to
+know who can make rules and whether people will follow them.
+
+Ostrom's account feels more useful for asking those questions. It also
+asks more of the reader. Saying that rules should suit local conditions
+does not tell us which rules will work in a specific place.
+
+I would be suspicious of any argument that uses the commons to justify
+one form of ownership without looking at how it is actually managed.
+
+\section{Practical implications}
+
+For a shared resource, I would start by identifying who uses it, what
+limits it has, and who bears the cost of overuse. Then I would ask how
+users can agree on rules and respond when those rules fail.
+
+The people affected need some way to see whether the arrangement is
+working. Good intentions alone leave the original incentive problem
+unresolved.
+
+\renewcommand{\refname}{References}
+\begin{thebibliography}{9}
+\small
+\setlength{\itemsep}{0.35em}
+
+\bibitem{hardin}
+Hardin, G. (1968).
+\href{https://doi.org/10.1126/science.162.3859.1243}
+{The tragedy of the commons.}
+\textit{Science}, 162(3859), 1243--1248.
+
+\bibitem{ostrom}
+Ostrom, E. (1999).
+\href{https://doi.org/10.1146/annurev.polisci.2.1.493}
+{Coping with tragedies of the commons.}
+\textit{Annual Review of Political Science}, 2, 493--535.
+
+\bibitem{nyu}
+NYU School of Law.
+\href{https://www.law.nyu.edu/news/OSTROM_CONFERENCE_KEYNOTE}
+{Nobel Prize winner Elinor Ostrom delivers keynote at conference on cultural commons.}
+Report of Ostrom's lecture.
+
+\end{thebibliography}
+\end{document}
