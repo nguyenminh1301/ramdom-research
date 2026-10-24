@@ -1,0 +1,137 @@
+% Compiler: pdfLaTeX
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Document details
+\newcommand{\researchtitle}{Path dependence}
+\newcommand{\researchshorttitle}{Path dependence}
+\newcommand{\researchdate}{2026-10-25}
+
+% Layout
+\geometry{left=2.7cm,right=2.7cm,top=2.5cm,bottom=2.5cm,headheight=14pt}
+\hypersetup{hidelinks,pdftitle={\researchtitle}}
+\urlstyle{same}
+\frenchspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\linespread{1.04}
+\setlength{\emergencystretch}{1em}
+
+\titleformat{\section}
+    {\large\bfseries}{\thesection}{0.65em}{}
+\titleformat{\subsection}
+    {\normalsize\bfseries}{\thesubsection}{0.65em}{}
+\titlespacing*{\section}{0pt}{1.15em}{0.35em}
+\titlespacing*{\subsection}{0pt}{0.7em}{0.2em}
+\setlist[itemize]{leftmargin=1.35em,itemsep=0.25em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=0.25em,topsep=0.2em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Random Research}
+\fancyhead[R]{\small\researchshorttitle}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+{\LARGE\bfseries\researchtitle\par}
+\vspace{0.4em}
+{\small\researchdate\par}
+
+\section{Overview}
+
+Path dependence describes processes in which earlier events help shape
+the outcomes available later. Once people have built skills and routines
+around one option, a different starting point may no longer lead to the
+same result. \cite{arthur,david}
+
+The idea makes the history of a choice relevant. Knowing what alternatives
+exist today may not explain how one became established.
+
+\section{Findings}
+
+Arthur models competing technologies that improve as more people adopt
+them. In that setting, small historical events can influence which
+technology becomes established. The outcome can become difficult to
+change and need not be the most efficient one. This is a result of the
+model's assumptions about increasing returns, not a claim about every
+technology market. \cite{arthur}
+
+David's account adds a useful limit. Path dependence alone is neither
+necessary nor sufficient for market failure. Historical influence does
+not establish that the outcome is inferior, or that a particular
+intervention would improve it. \cite{david}
+
+Together, these accounts make a narrow argument: the route to an outcome
+can matter, while its quality still needs a separate assessment.
+
+\section{Example}
+
+Imagine a small team chooses a spreadsheet tool because one early member
+already knows it. Over time, the team builds templates, trains new members,
+and exchanges files with partners using the same format.
+
+A competing tool later offers features they prefer. Switching would still
+require converting files and learning new workflows. The original
+decision has changed the cost of choosing today.
+
+This hypothetical example also helps separate path dependence from the
+sunk cost fallacy. Time already spent learning is gone. The work that a
+migration would require is still a future cost and belongs in the decision.
+
+\section{Discussion}
+
+I find this more convincing when somebody can explain what keeps the
+current arrangement in place. Saying that history matters is too broad
+on its own. In the example, the templates and shared skills provide
+specific reasons for persistence.
+
+I would also be careful about assuming that an old arrangement survives
+only because people resist change. Compatibility and familiarity may
+still be useful. A newer option has to be assessed alongside the effort
+required to move.
+
+For me, the idea raises a question about early choices: which small
+conveniences could become expensive commitments if the project grows?
+
+\section{Practical implications}
+
+For a tool expected to last, I would check how easily its files can be
+exported and whether a small trial could reveal problems before others
+depend on it.
+
+When reviewing an established choice, I would separate the reason it
+was first adopted from the reasons to keep it now. Some may have expired.
+Others may remain strong enough to justify staying.
+
+\renewcommand{\refname}{References}
+\begin{thebibliography}{9}
+\small
+\setlength{\itemsep}{0.35em}
+
+\bibitem{arthur}
+Arthur, W. B. (1989).
+\href{https://doi.org/10.2307/2234208}
+{Competing technologies, increasing returns, and lock-in by historical events.}
+\textit{The Economic Journal}, 99(394), 116--131.
+
+\bibitem{david}
+David, P. A.
+\href{https://www.nuffield.ox.ac.uk/economics/history/paper20/path.htm}
+{Path dependence and the quest for historical economics:
+One more chorus of the ballad of QWERTY.}
+Author's abstract, University of Oxford.
+
+\end{thebibliography}
+\end{document}
