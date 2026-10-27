@@ -1,0 +1,137 @@
+% Compiler: pdfLaTeX
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+% Document details
+\newcommand{\researchtitle}{The planning fallacy}
+\newcommand{\researchshorttitle}{The planning fallacy}
+\newcommand{\researchdate}{2026-10-27}
+
+% Layout
+\geometry{left=2.7cm,right=2.7cm,top=2.5cm,bottom=2.5cm,headheight=14pt}
+\hypersetup{hidelinks,pdftitle={\researchtitle}}
+\urlstyle{same}
+\frenchspacing
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\linespread{1.04}
+\setlength{\emergencystretch}{1em}
+
+\titleformat{\section}
+    {\large\bfseries}{\thesection}{0.65em}{}
+\titleformat{\subsection}
+    {\normalsize\bfseries}{\thesubsection}{0.65em}{}
+\titlespacing*{\section}{0pt}{1.15em}{0.35em}
+\titlespacing*{\subsection}{0pt}{0.7em}{0.2em}
+\setlist[itemize]{leftmargin=1.35em,itemsep=0.25em,topsep=0.2em}
+\setlist[enumerate]{leftmargin=1.6em,itemsep=0.25em,topsep=0.2em}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Random Research}
+\fancyhead[R]{\small\researchshorttitle}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\begin{document}
+
+{\LARGE\bfseries\researchtitle\par}
+\vspace{0.4em}
+{\small\researchdate\par}
+
+\section{Overview}
+
+The planning fallacy is the tendency to underestimate how long a task
+will take, even when similar tasks have taken longer before.
+Buehler, Griffin, and Ross studied this pattern in everyday academic
+and nonacademic work. \cite{buehler}
+
+A plan can sound reasonable because its steps are easy to imagine.
+The difficulty is deciding how closely those steps resemble the way
+work actually gets finished.
+
+\section{Findings}
+
+In Buehler and colleagues' studies, participants gave overly optimistic
+estimates of their own completion times. When explaining their forecasts,
+they focused mainly on how the upcoming task would unfold. They also
+tended to explain previous delays through temporary or specific
+circumstances, making those experiences seem less relevant to the
+next attempt. \cite{buehler}
+
+In one study, asking participants to connect relevant past experiences
+with their predictions eliminated the optimistic bias. That is a useful
+result within the study, though it does not establish a correction
+that will work for every task. \cite{buehler}
+
+Kahneman and Lovallo describe an inside view that builds forecasts around
+the current plan and its scenarios. Their account explains how attention
+to the particular project can crowd out information about previous
+outcomes. \cite{kahneman}
+
+\section{Example}
+
+Suppose someone sets aside an evening to write a short research note.
+They allow time for reading and drafting, then expect to be finished.
+
+While reading, they find that two sources use the central term differently.
+They spend time resolving the difference, replace an example, and revise
+the draft. None of these steps is especially surprising once it happens,
+but the initial estimate left little room for them.
+
+This is a hypothetical example. The issue is whether the estimate
+describes a smooth attempt or a realistic range of attempts.
+
+\section{Discussion}
+
+What interests me is how easily an explanation for yesterday's delay can
+become a reason to ignore it today. Each interruption may have been
+unusual, yet a plan with no room for interruptions can still be too short.
+
+I would be cautious about calling every missed deadline a planning
+fallacy. A task can change after work begins. People can also choose an
+ambitious deadline knowing that it is unlikely. A forecast and a target
+answer different questions.
+
+For a small project, I would trust a record of comparable work more than
+the feeling that this attempt should be straightforward.
+
+\section{Practical implications}
+
+I would start with the time similar tasks actually took, then adjust
+for differences I can explain. If the work is new, I would state the
+uncertainty and revise the estimate after the first part is complete.
+
+It also seems worth separating working time from elapsed time.
+A draft that needs feedback may occupy only a few hours of attention
+while remaining unfinished for several days.
+
+\renewcommand{\refname}{References}
+\begin{thebibliography}{9}
+\small
+\setlength{\itemsep}{0.35em}
+
+\bibitem{buehler}
+Buehler, R., Griffin, D., and Ross, M. (1994).
+\href{https://doi.org/10.1037/0022-3514.67.3.366}
+{Exploring the planning fallacy: Why people underestimate their task completion times.}
+\textit{Journal of Personality and Social Psychology}, 67(3), 366--381.
+
+\bibitem{kahneman}
+Kahneman, D., and Lovallo, D. (1993).
+\href{https://doi.org/10.1287/mnsc.39.1.17}
+{Timid choices and bold forecasts: A cognitive perspective on risk taking.}
+\textit{Management Science}, 39(1), 17--31.
+
+\end{thebibliography}
+\end{document}

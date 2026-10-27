@@ -11,5 +11,6 @@
 | The tragedy of the commons | 2026-10-16 | Written | [Source](tragedy-of-the-commons/README.tex) |
 | Network effects | 2026-10-18 | Written | [Source](network-effects/README.tex) |
 | Path dependence | 2026-10-25 | Written | [Source](path-dependence/README.tex) |
+| The planning fallacy | 2026-10-27 | Written | [Source](planning-fallacy/README.tex) |
 
 The Stag Hunt is an unfinished local draft; its date has not been confirmed.
